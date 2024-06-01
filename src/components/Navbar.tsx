@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu font-extrabold  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu font-extrabold text-black menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li className="text-base font-semibold">
               <Link href="/">Home</Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className=" btn-disabled btn disabled ">Temukan Lirikmu</a>
+          <a className=" btn-disabled btn disabled text-xs md:text-sm ">Temukan Lirikmu</a>
         </div>
       </div>
     </>

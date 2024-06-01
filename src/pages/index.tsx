@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="h-screen bg-[#F2F2F7] flex justify-center items-center">
+      <div id="start" className="h-screen w-full bg-[#F2F2F7] flex justify-center items-center">
         <Image
           src={albums}
           alt="Lyrics Image"
-          className=" rounded-lg bg-base-200 shadow-2xl"
+          className=" rounded-lg  bg-base-200 shadow-2xl"
         />
       </div>
-      <div className="h-screen  flex flex-col justify-center gap-3 items-center">
+      <div className="h-screen  px-6  flex flex-col justify-center gap-3 items-center">
         <h2 className="font-bold text-4xl">
           Lagu teratas yang ditemukan di seluruh dunia saat ini
         </h2>
@@ -23,7 +23,7 @@ export default function Home() {
           Lihat siapa yang berhasil masuk daftar, untuk lagu yang paling sering
           di-Shazam di seluruh dunia
         </p>
-        <div className="carousel carousel-center max-w-6xl p-4 space-x-4 bg-neutral rounded-box">
+        <div className="carousel carousel-center max-w-xs md:max-w-6xl p-4 space-x-4 bg-neutral rounded-box">
           {LiriksDummyData.map((lirik, idx) => (
             
           <div key={idx} className="carousel-item ">
@@ -34,8 +34,8 @@ export default function Home() {
                   alt="Shoes"
                 />
               </figure>
-              <div className="card-body">
-                <h2 className="card-title">{lirik.genre}</h2>
+              <div className="card-body text-center flex flex-col justify-center items-center">
+                <h2 className="card-title w-full ">{lirik.genre}</h2>
                 <p>{lirik.judul}</p>
                 <p>{lirik.band}</p>
                 <div className="card-actions justify-end">
